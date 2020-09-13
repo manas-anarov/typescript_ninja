@@ -1,13 +1,22 @@
-var character = 'mario';
-var age = 30;
-var isBlackBelt = false;
-// character = 20;
-character = 'luigi';
-//age = 'Youchi';
-age = 40;
-//isBlackBelt = 'yes';
-isBlackBelt = true;
-var circ = function (diametr) {
-    return diametr * Math.PI;
-};
-console.log(circ(10));
+var charachter;
+var age;
+var isLoggedIn;
+//age = 'luigi'
+age = 30;
+// isLoggedIn = 10;
+isLoggedIn = false;
+var ninjas = [];
+// ninjas = ['youshi', 'mario'];
+ninjas.push('shaun');
+var mixed = [];
+mixed.push('hello');
+mixed.push(20);
+mixed.push(true);
+console.log(mixed);
+var uid;
+uid = '123';
+uid = 123;
+var ninjaOne;
+ninjaOne = { name: 'yiushi', age: 30 };
+var ninjaTwo;
+ninjaOne = { name: 'yiushi', age: 30, belt: 'black' };
