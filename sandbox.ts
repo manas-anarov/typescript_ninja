@@ -1,41 +1,22 @@
-let charachter: string;
-let age: number;
-let isLoggedIn: boolean;
+let age: any = 25;
+
+age = true;
+console.log(age);
+age = 'hello';
+console.log(age)
+age = {name: 'luigi'};
+console.log(age)
+
+let mixed: any[] = [];
+mixed.push(5);
+mixed.push('mario');
+mixed.push(false);
+console.log(mixed)
+
+let ninja: {name: any, age: any};
+ninja = {name: 'youshi', age: 25};
+console.log(ninja)
 
 
-//age = 'luigi'
-age = 30;
-
-// isLoggedIn = 10;
-isLoggedIn = false;
-
-
-let ninjas: string[] = [];
-// ninjas = ['youshi', 'mario'];
-ninjas.push('shaun');
-
-
-let mixed: (string|number|boolean)[] = [];
-mixed.push('hello');
-mixed.push(20);
-mixed.push(true);
-console.log(mixed);
-
-
-let uid: string|number;
-uid = '123';
-uid = 123;
-
-
-
-let ninjaOne: object;
-ninjaOne = {name: 'yiushi', age: 30};
-
-
-let ninjaTwo: {
-	name: string,
-	age: number,
-	belt: string
-};
-
-ninjaOne = {name: 'yiushi', age: 30, belt: 'black'};
+ninja = {name: 25, age: 'youshi'};
+console.log(ninja)
