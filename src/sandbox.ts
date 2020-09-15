@@ -1,12 +1,26 @@
+// let greet: Function;
 
-type StrongOrNum  = string | number;
-type ObjWithName  = {name: string, uid:StrongOrNum};
-
-
-const logDetails = (uid: StrongOrNum, item: string) => {
-    console.log(`${item} has a uid of ${uid}`);
+let greet: (a: string, b: string) => void;
+greet = (name: string, greeting: string)=> {
+    console.log(`${name} says ${greeting}`);
 }
 
-const greet = (user: ObjWithName) => {
-    console.log(`${user} say hello`);
+
+
+let calc: (a: number, b: number, c: string) => number;
+calc = (numOne: number, numTwo: number, action: string) =>{
+    if (action === 'add')
+    {
+        return numOne + numTwo;
+    }else{
+        return numOne - numTwo;
+    }
+}
+
+
+let logDetails: (obj: {name: string, age: number})=> void;
+
+type person = {name: string, age: number};
+logDetails = (ninja: person) => {
+    console.log(`${ninja.name} is ${ninja.age} yers old`);
 }
